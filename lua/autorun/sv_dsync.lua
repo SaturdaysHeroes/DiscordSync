@@ -8,7 +8,7 @@ if !SERVER then return end
 
 include("dsync_config.lua")
 
-function dSyncPJoin(ply)
+local function dSyncPJoin(ply)
     if !ply then return end 
     if dsync.config.join == false then return end
     
@@ -16,7 +16,7 @@ function dSyncPJoin(ply)
 end
 hook.Add("PlayerInitialSpawn", "dsync_pjoin", dSyncPJoin)
 
-function dSyncPLeave(ply)
+local function dSyncPLeave(ply)
     if !ply then return end 
     if dsync.config.leave == false then return end
 
@@ -25,7 +25,7 @@ end
 hook.Add("PlayerDisconnected", "dsync_pleave", dSyncPLeave)
 
 
-function dSyncChat(ply, text, team)
+local function dSyncChat(ply, text, team)
     if !ply then return end 
     if !text then return end 
     if dsync.config.chat == false then return end 
@@ -35,7 +35,7 @@ end
 hook.Add("PlayerSay", "dsync_chat", dSyncChat)
 
 
-function dSyncWarnings(target_ply, ply, reason)
+local function dSyncWarnings(target_ply, ply, reason)
     if !ply then return end 
     if !target_ply then return end 
     if dsync.config.warns == false then return end 
