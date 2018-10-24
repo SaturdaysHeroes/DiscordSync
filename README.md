@@ -7,7 +7,7 @@ This script pushes noficiations (Warnings, Connections, Disconnections and Chat)
 
 ### Example 
 ```lua
-function dSyncWarnings(target_ply, ply, reason)
+local function dSyncWarnings(target_ply, ply, reason)
     if !ply then return end 
     if !target_ply then return end 
     if dsync.config.warns == false then return end 
