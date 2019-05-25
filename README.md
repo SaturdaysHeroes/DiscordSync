@@ -1,7 +1,7 @@
 # DiscordSync
 A script that pushes notifications to your Discord Server. 
 
-**This is currently broken due to Discord blocking the gmod useragent**
+**This is currently broken due to Discord blocking the gmod useragent.**
 
 The config is located at `lua/dsync_config.lua`.
 
