@@ -1,6 +1,8 @@
 # DiscordSync
 A script that pushes notifications to your Discord Server. 
 
+**This is currently broken due to Discord blocking the gmod useragent**
+
 The config is located at `lua/dsync_config.lua`.
 
 This script pushes noficiations (Warnings, Connections, Disconnections and Chat) to your discord server using discord's webhooks. The script is rather simple but works as planned, I do not plan on adding any more "modules" to the script however if you decide to do so, feel free to send a pull request. 
