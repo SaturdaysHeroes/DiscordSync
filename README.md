@@ -1,17 +1,16 @@
 ## DiscordSync
 
-### This is currently broken due to Discord blocking the gmod useragent.
+**THIS CURRENTLY DOES NOT WORK DUE TO DISCORD BLOCKING GMOD'S USERAGENT**
 
-A script that pushes notifications to your Discord Server. 
+This script pushes noficiations (Warnings, Connections, Disconnections and Chat) to your discord server using discord's webhooks. The script is rather simple but works as planned, I do not plan on adding any more "modules" to the script however if you decide to do so, feel free to send a pull request, you can find an example module below.
 
-The config is located at `lua/dsync_config.lua`.
+## Requirements
+DiscordSync is based on Webhook, therefore you will need to create a webhook on discord in order to use this. 
 
-This script pushes noficiations (Warnings, Connections, Disconnections and Chat) to your discord server using discord's webhooks. The script is rather simple but works as planned, I do not plan on adding any more "modules" to the script however if you decide to do so, feel free to send a pull request. 
-
-### Preview
+## Preview
 ![Discord](https://i.saturdaysheroes.xyz/img/PAqx.png)
 
-### Example 
+## Example 
 ```lua
 local function dSyncWarnings(target_ply, ply, reason)
     if !ply then return end 
@@ -23,5 +22,4 @@ local function dSyncWarnings(target_ply, ply, reason)
 end
 hook.Add("AWarnPlayerWarned", "dsync_awarn", dSyncWarnings)
 ```
-If you have minimal Lua knowledge you should be able to add your own things in with ease, if you're having problems you can add me but I don't promise to help. 
 
