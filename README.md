@@ -1,6 +1,6 @@
 ## DiscordSync
 
-**THIS CURRENTLY DOES NOT WORK DUE TO DISCORD BLOCKING GMOD'S USERAGENT**
+**THIS CURRENTLY DOES NOT WORK DUE TO DISCORD BLOCKING GMOD'S USERAGENT!**
 
 This script pushes noficiations (Warnings, Connections, Disconnections and Chat) to your discord server using discord's webhooks. The script is rather simple but works as planned, I do not plan on adding any more "modules" to the script however if you decide to do so, feel free to send a pull request, you can find an example module below.
 
