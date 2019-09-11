@@ -1,6 +1,6 @@
-# DiscordSync
+## DiscordSync
 
-## This is currently broken due to Discord blocking the gmod useragent.
+### This is currently broken due to Discord blocking the gmod useragent.
 
 A script that pushes notifications to your Discord Server. 
 
